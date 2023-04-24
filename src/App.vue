@@ -1,8 +1,5 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <burger-menu />
   <router-view/>
 </template>
 
@@ -14,17 +11,14 @@
   text-align: center;
   color: #2c3e50;
 }
+</style>
 
-nav {
-  padding: 30px;
+<script lang="ts">
+import BurgerMenu from '@/components/BurgerMenu.vue'
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  components: {
+    BurgerMenu
   }
 }
-</style>
+</script>
