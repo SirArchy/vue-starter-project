@@ -7,13 +7,13 @@
         </label>
 
         <ul class="menu__box">
-            <li><a class="menu__item" href="/home">Home</a></li>
-            <li><a class="menu__item" href="/login">Login</a></li>
-            <li><a class="menu__item" href="/season-type">Season Type</a></li>
-            <li><a class="menu__item" href="/match-picker">Match Picker</a></li>
-            <li><a class="menu__item" href="/elo-calculator">Elo Calculator</a></li>
-            <li><a class="menu__item" href="/contact">Contact</a></li>
-            <li><a class="menu__item" href="/about">About</a></li>
+            <li><router-link class="menu__item" to="/">Home</router-link></li>
+            <li><router-link class="menu__item" to="/login">Login</router-link></li>
+            <li><router-link class="menu__item" to="/season-type">Season Type</router-link></li>
+            <li><router-link class="menu__item" to="/match-picker">Match Picker</router-link></li>
+            <li><router-link class="menu__item" to="/elo-calculator">Elo Calculator</router-link></li>
+            <li><router-link class="menu__item" to="/contact">Contact</router-link></li>
+            <li><router-link class="menu__item" to="/about">About</router-link></li>
             <footer>
                 <p>Copyright &copy; {{ year }}</p>
             </footer>
@@ -21,6 +21,7 @@
     </div>
 </template>
 
+<!-- This implements a computed variable, maybe important for the calculated values later on  -->
 <script lang="ts">
 import { computed } from 'vue'
 
@@ -62,7 +63,7 @@ export default {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 16;
 }
 
 .menu__btn>span,
@@ -99,6 +100,7 @@ export default {
     background-color: #ECEFF1;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
+    z-index: 1;
 }
 
 .menu__item {

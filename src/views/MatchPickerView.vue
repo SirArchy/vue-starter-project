@@ -1,29 +1,14 @@
 <template>
     <div class="match-picker">
-        <h1>This is an about page</h1>
+        <h1>This is a match picker page</h1>
         <button>
-            <button>
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front text"> Click me
-                </span>
-            </button>
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> FIGHT!
+            </span>
         </button>
     </div>
-  </template>
-  
-  <script lang="ts">
-  import { defineComponent } from 'vue'
-  import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
-  
-  export default defineComponent({
-    name: 'MatchPickerView',
-    components: {
-      HelloWorld
-    }
-  })
-  </script>
-  
+</template>
 
 <style lang="scss">
 button {
@@ -31,7 +16,7 @@ button {
     border: none;
     background: transparent;
     padding: 0;
-    cursor: pointer;
+    cursor: grab;
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
